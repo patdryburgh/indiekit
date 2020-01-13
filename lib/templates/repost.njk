@@ -1,9 +1,10 @@
 ---
 title: '{{ name }}'
 date: {{ published }}
-repost-of: {{ repostOf }}
+link: {{ repostOf }}
+category: "Repost"
 {%- if category %}
-category:
+tag:
 {%- for item in category %}
 - {{ item }}
 {%- endfor %}

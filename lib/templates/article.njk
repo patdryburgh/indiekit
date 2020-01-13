@@ -4,8 +4,9 @@ date: {{ published }}
 {%- if summary %}
 excerpt: {{ summary }}
 {%- endif %}
+category: "Blog"
 {%- if category %}
-category:
+tag:
 {%- for item in category %}
 - {{ item }}
 {%- endfor %}

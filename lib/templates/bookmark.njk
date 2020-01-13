@@ -1,9 +1,10 @@
 ---
 title: '{{ name }}'
 date: {{ published }}
-bookmark-of: {{ bookmarkOf }}
+link: {{ bookmarkOf }}
+category: "Bookmark"
 {%- if category %}
-category:
+tag:
 {%- for item in category %}
 - {{ item }}
 {%- endfor %}

@@ -8,10 +8,10 @@ Having deployed IndieKit to your own server, you’ll no doubt want to customise
 
 A [list of categories clients can expose in their publishing interface](https://github.com/indieweb/micropub-extensions/issues/5). Defaults to `[]`. There are two ways of providing these values:
 
-* a pre-detirminded array of values:
+* a pre-determined array of values:
 
   ```json
-  categories: [
+  "categories" : [
     "indiekit",
     "indieweb",
     "indiewebcamp"
@@ -21,7 +21,7 @@ A [list of categories clients can expose in their publishing interface](https://
 * giving the `url` property the address of a JSON file that provides an array of values:
 
   ```json
-  categories: {
+  "categories" : {
     "url": "https://paulrobertlloyd.com/categories.json"
   }
   ```

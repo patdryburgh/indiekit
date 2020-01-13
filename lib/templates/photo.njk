@@ -1,11 +1,16 @@
 ---
 date: {{ published }}
+category: "Photo"
 {%- if category %}
-category:
+tag:
 {%- for item in category %}
 - {{ item }}
 {%- endfor %}
 {%- endif %}
+image:
+  path: {{ photo[0].value }}
+  thumbnail: https://images.weserv.nl/?url={{ photo[0].value }}&w=400
+  caption: {{ photo[0].alt }}
 photo:
 {%- for item in photo %}
 - url: {{ item.value }}

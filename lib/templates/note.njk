@@ -1,6 +1,6 @@
 ---
 date: {{ published }}
-category: "Note"
+category: "micro"
 {%- if category %}
 tag:
 {%- for item in category %}
@@ -14,4 +14,5 @@ syndicate-to:
 {%- endfor %}
 {%- endif %}
 ---
+
 {{ content | safe }}
